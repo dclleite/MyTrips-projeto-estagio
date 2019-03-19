@@ -1,65 +1,251 @@
-﻿
-/*for details on configuring this project to bundle and minify static web assets. */
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿.teste {
+    background-color: #7089a9;
+    padding: 17px 0;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right,rgb(0,165,255), rgb(0,203,255));
+    min-height: 25vh;
+    text-align: center;
+    color: #f1f1f1;
 }
 
-/*Main------------------------------------------*/
-.content {
+.seção {
+    background-color: white;
+    padding: 10px;
+}
+
+.infos {
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 17vh;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7px 0;
+}
+
+.divInfos {
+    margin: 10px;
+    color: #7089a9;
+    font-size: 9px;
+}
+
+.card-teste {
+    display: flex;
+    flex-direction: row;
+    min-height: 10vh;
+    max-width: 700px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+    margin: 7px auto;
+}
+
+.card-img {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 200px;
+}
+
+.card-infos {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0 0 0 5px;
+}
+
+.card-infos-interno {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    /*padding: 5px;*/
-    background-color: white;
-}
-/*Header---------------------------------------*/
-.content_top {
-    width: 100%;
-    height: 20vh;
-    text-align: center;
-    background-image: linear-gradient(to right,rgb(0,165,255), rgb(0,203,255));
 }
 
-
-/*Section------------------------------------------*/
-.details {
-    display: none;
-    margin: 10px;
-    background-color: white;
-    height: 15vh;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px rgba(0,0,0,.2);
-    border: 2px solid red;
+.stars {
+    margin: 0;
+    padding: 0;
 }
 
-.content_center {
-    width: 100%;
+.colorStar {
+    color: #f5d46b;
+    font-size: 10px;
+    padding-left: 3px;
 }
 
-/*Container details------------------------------------------*/
-.information {
-    margin: 10px;
-    background-color: white;
-    height: 15vh;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px rgba(0,0,0,.2);
-    border: 2px solid black;
+#nomeHotel {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 2px 0;
+    padding: 0;
+}
+
+#localHotel {
+    font-size: 8px;
+    color: #dce0e3;
+}
+
+#precoHotel {
+    color: #2fb4ff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.precoHotel {
+    justify-content: flex-end;
+    padding-right: 10px;
 }
 
 
+@media screen and (min-width: 480px) {
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
+    .cabecalho {
+        min-height: 40vh;
     }
+
+    .infos {
+        min-height: 25vh;
+    }
+
+    .divInfos {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .card-infos {
+        padding-top: 10px;
+    }
+
+    .card-infos-interno {
+        padding: 2px 0 0 10px;
+    }
+
+    #nomeHotel {
+        font-size: 17px;
+    }
+
+    #localHotel {
+        font-size: 13px;
+    }
+
+    #precoHotel {
+        font-size: 17px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .precoHotel {
+        padding-right: 20px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        min-height: 50vh;
+    }
+
+        .cabecalho h1 {
+            font-size: 100px;
+        }
+    /*.infos{
+		min-height: 30vh; 
+	}
+	*/
+    .divInfos {
+        font-size: 24px;
+        padding: 0 20px;
+    }
+
+    .card-infos {
+        padding-top: 18px;
+    }
+
+    .card-infos-interno {
+        padding: 5px 0 0 10px;
+    }
+
+    #nomeHotel {
+        font-size: 25px;
+    }
+
+    #localHotel {
+        font-size: 20px;
+    }
+
+    #precoHotel {
+        font-size: 25px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .card-teste {
+        margin: 20px auto;
+    }
+}
+
+/*Contato ---------------------------------------*/
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a3e51;
+    color: #f1f1f1;
+    height: 100vh;
+    padding: 20px;
+}
+
+#contato h2 {
+        font-size: 3em;
+        padding-bottom: 10px;
+}
+
+#contato p {
+    margin: 5px;
+}
+
+#contato div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icones {
+    display: block;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    margin: 20px 5px;
+}
+
+.icones:hover {
+    /* border: 2px solid #262626; */
+    background: rgba(255,255,255,.2);
+    transition: all .7s;
+}
+
+.icones:hover path {
+    /* fill: #262626; */
+    transition: all .7s;
 }

@@ -88,17 +88,20 @@ namespace MyTrips.Models
 
     public class HotelEscolhido : BaseModel
     {
-        public Hotel chosenHosting { get; private set; }
+        [Required]
+        public string nameCity { get; set; }
+        [Required]
+        public string country { get; set; }
+        [Required]
+        public string date { get; set; }
+        [Required]
+        public int guest { get; set; }
+        [Required]
+        public string classe { get; set; }
+        [Required]
+        public decimal price { get; set; }
 
-        public HotelEscolhido()
-        {
 
-        }
-
-        public HotelEscolhido(Hotel chosenHosting)
-        {
-            this.chosenHosting = chosenHosting;
-        }
     }
 
 }

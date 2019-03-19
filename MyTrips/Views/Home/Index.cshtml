@@ -1,43 +1,69 @@
 ﻿@model List<Host>;
+
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<main class="content">
+<main class="container">
 
-    <header class="content_top">
-        <h1>my trips</h1>
-
-
+    <header class="content_top ">
+        <div class="cabecalho">
+            <h1>my trips</h1>
+        </div>
     </header>
 
-    <section class="content_center">
-        <div class="information ">
-            <div id="detalhes" class="details">
-                <p id="cityid"></p>
-                <p id="date"></p>
-                <p id="guest"></p>
-                <p id="class"></p>
-                <p id="price"></p>
+    <section class="seção">
+        <div class="infos">
+            <div class="divInfos">
+                <p id="city"><i class="fas fa-map-marker-alt"></i> Dubai, UAE</p>
             </div>
-            <h3>Choose a trip</h3>
+            <div class="divInfos">
+                <p id="date"><i class="far fa-calendar-alt"></i> 2019-03-17</p>
+            </div>
+            <div class="divInfos">
+                <p id="guest"><i class="far fa-user"></i> 1 Guets</p>
+            </div>
+            <div class="divInfos">
+                <p id="class"><i class="fas fa-crown"></i> First Class</p>
+            </div>
+            <div class="divInfos">
+                <p id="price"><i class="far fa-credit-card"></i> 800$</p>
+            </div>
         </div>
 
         @{
-
             foreach (var hotel in Model)
             {
-        <a asp-action="">
-            <div class="information" onclick="mostrar('detalhes') ">
-                <img src="@hotel.thumb">
-                <p>@hotel.stars</p>
-                <h3>@hotel.hotelName</h3>
-                <p>@hotel.price</p>
-            </div>
-        </a>
+                <div class="card-teste">
+                    <div class="card-img">
+                        <img src="@hotel.thumb">
+                    </div>
+                    <div class="card-infos">
+                        <div class="card-infos-interno">
+                            <p class="stars"><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i></p>
+                        </div>
+                        <div class="card-infos-interno nomeHotel">
+                            <h3 id="nomeHotel">@hotel.hotelName</h3>
+                        </div>
+                        <div class="card-infos-interno localHotel">
+                            <p id="localHotel">@(hotel.location), Dubai</p>
+                        </div>
+                        <div class="card-infos-interno precoHotel">
+                            <p id="precoHotel">@(hotel.price)€</p>
+                        </div>
+                    </div>
+                </div>
             }
         }
 
 
     </section>
 </main>
+@section Scripts
+    {
+    <script type="text/javascript">
+        function MostraDadosHotel() {
+            debugger;
+        }
+    </script>
+}

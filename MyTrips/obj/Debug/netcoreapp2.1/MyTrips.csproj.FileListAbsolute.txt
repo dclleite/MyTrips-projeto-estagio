@@ -13,7 +13,6 @@ C:\Users\natacha.leite\Desktop\MyTrips_projetoEstagio\MyTrips\MyTrips\obj\Debug\
 C:\Users\natacha.leite\Desktop\MyTrips_projetoEstagio\MyTrips\MyTrips\obj\Debug\netcoreapp2.1\MyTrips.TagHelpers.input.cache
 C:\Users\natacha.leite\Desktop\MyTrips_projetoEstagio\MyTrips\MyTrips\obj\Debug\netcoreapp2.1\MyTrips.TagHelpers.output.cache
 C:\Users\natacha.leite\Desktop\MyTrips_projetoEstagio\MyTrips\MyTrips\obj\Debug\netcoreapp2.1\MyTrips.RazorCoreGenerate.cache
-C:\Users\natacha.leite\Desktop\MyTrips_projetoEstagio\MyTrips\MyTrips\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 C:\Users\natacha.leite\Desktop\MyTrips_projetoEstagio\MyTrips\MyTrips\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\natacha.leite\Desktop\MyTrips_projetoEstagio\MyTrips\MyTrips\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\natacha.leite\Desktop\MyTrips_projetoEstagio\MyTrips\MyTrips\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
