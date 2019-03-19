@@ -63,15 +63,15 @@ namespace MyTrips.Models
 
     }
 
-    public class City : BaseModel
+    public class City
     {
         public City()
         {
         }
 
-        public City(int id, string name)
+        public City(int Id, string name)
         {
-            this.Id = id;
+            this.Id = Id;
             this.name = name;
         }
 

@@ -9,7 +9,7 @@ using MyTrips;
 namespace MyTrips.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20190319024628_Modelo")]
+    [Migration("20190319032656_Modelo")]
     partial class Modelo
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -22,12 +22,12 @@ namespace MyTrips.Migrations
 
             modelBuilder.Entity("MyTrips.Models.City", b =>
                 {
-                    b.Property<int>("id");
+                    b.Property<int>("Id");
 
                     b.Property<string>("name")
                         .IsRequired();
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("City");
                 });

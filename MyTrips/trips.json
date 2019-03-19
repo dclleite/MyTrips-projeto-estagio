@@ -5,7 +5,7 @@
     "stars" : 5,
     "location" : "Garghoud",
     "city": {
-        "id": "132",
+        "id": 132,
         "name": "Dubai"
     },
     "country": "UAE",

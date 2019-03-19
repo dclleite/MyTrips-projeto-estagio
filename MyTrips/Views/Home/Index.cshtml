@@ -33,8 +33,6 @@
 
         @{
             DateTime dataHoje = DateTime.Today;
-            
-            <div>@dataHoje</div>
             foreach (var hotel in Model)
             {
                 DateTime dataHotel = DateTime.Parse(hotel.date);

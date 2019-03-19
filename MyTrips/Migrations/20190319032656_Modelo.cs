@@ -11,12 +11,12 @@ namespace MyTrips.Migrations
                 name: "City",
                 columns: table => new
                 {
-                    id = table.Column<int>(nullable: false),
+                    Id = table.Column<int>(nullable: false),
                     name = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_City", x => x.id);
+                    table.PrimaryKey("PK_City", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(

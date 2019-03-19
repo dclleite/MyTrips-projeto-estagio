@@ -28,18 +28,18 @@ namespace MyTrips
 
         public void SaveHost(List<Hotel> hotel)
         {
-            foreach (var place in hotel)
+            /*foreach (var place in hotel)
             {
 
                 if (!contexto.Set<City>().Where(c => c.Id == place.city.id).Any())
                 {
                     contexto.Set<City>().Add(new City(place.city.id, place.city.name));
                 }
-                
+
             }
 
             contexto.SaveChanges();
-
+            */
             foreach (var place in hotel)
             {
                 

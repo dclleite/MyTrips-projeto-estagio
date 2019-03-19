@@ -20,12 +20,12 @@ namespace MyTrips.Migrations
 
             modelBuilder.Entity("MyTrips.Models.City", b =>
                 {
-                    b.Property<int>("id");
+                    b.Property<int>("Id");
 
                     b.Property<string>("name")
                         .IsRequired();
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("City");
                 });
