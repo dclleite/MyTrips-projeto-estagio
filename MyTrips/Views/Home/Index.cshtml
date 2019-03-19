@@ -32,27 +32,36 @@
         </div>
 
         @{
+            DateTime dataHoje = DateTime.Today;
+            
+            <div>@dataHoje</div>
             foreach (var hotel in Model)
             {
-                <div class="card-teste">
-                    <div class="card-img">
-                        <img src="@hotel.thumb">
+                DateTime dataHotel = DateTime.Parse(hotel.date);
+                int result = DateTime.Compare(dataHotel, dataHoje);
+                if (hotel.cityId == 132 && result >= 0)
+                {
+                    <div class="card-teste">
+                        <div class="card-img">
+                            <img src="@hotel.thumb">
+                        </div>
+                        <div class="card-infos">
+                            <div class="card-infos-interno">
+                                <p class="stars"><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i></p>
+                            </div>
+                            <div class="card-infos-interno nomeHotel">
+                                <h3 id="nomeHotel">@hotel.hotelName</h3>
+                            </div>
+                            <div class="card-infos-interno localHotel">
+                                <p id="localHotel">@(hotel.location), Dubai</p>
+                            </div>
+                            <div class="card-infos-interno precoHotel">
+                                <p id="precoHotel">@(hotel.price)€</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-infos">
-                        <div class="card-infos-interno">
-                            <p class="stars"><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i></p>
-                        </div>
-                        <div class="card-infos-interno nomeHotel">
-                            <h3 id="nomeHotel">@hotel.hotelName</h3>
-                        </div>
-                        <div class="card-infos-interno localHotel">
-                            <p id="localHotel">@(hotel.location), Dubai</p>
-                        </div>
-                        <div class="card-infos-interno precoHotel">
-                            <p id="precoHotel">@(hotel.price)€</p>
-                        </div>
-                    </div>
-                </div>
+                }
+
             }
         }
 

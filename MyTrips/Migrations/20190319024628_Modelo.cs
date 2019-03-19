@@ -39,27 +39,16 @@ namespace MyTrips.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Host", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Host_City_cityId",
-                        column: x => x.cityId,
-                        principalTable: "City",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Host_cityId",
-                table: "Host",
-                column: "cityId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Host");
+                name: "City");
 
             migrationBuilder.DropTable(
-                name: "City");
+                name: "Host");
         }
     }
 }

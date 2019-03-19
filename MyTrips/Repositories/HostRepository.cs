@@ -31,7 +31,7 @@ namespace MyTrips
             foreach (var place in hotel)
             {
 
-                if (!contexto.Set<City>().Where(c => c.id == place.city.id).Any())
+                if (!contexto.Set<City>().Where(c => c.Id == place.city.id).Any())
                 {
                     contexto.Set<City>().Add(new City(place.city.id, place.city.name));
                 }
@@ -46,7 +46,7 @@ namespace MyTrips
                 if (!contexto.Set<Host>().Where(c => c.hotelName == place.hotelName).Any())
                 {
                     contexto.Set<Host>().Add(new Host(place.hotelName, place.thumb, place.stars, place.location, 
-                        place.city.id, place.country, place.date, place.price, place.@class, place.guest));
+                        place.city.id,place.country, place.date, place.price, place.@class, place.guest));
                 }
                 
             }

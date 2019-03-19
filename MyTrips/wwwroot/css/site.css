@@ -46,6 +46,7 @@
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0,0,0,.2);
     margin: 7px auto;
+    cursor: pointer;
 }
 
 .card-img {

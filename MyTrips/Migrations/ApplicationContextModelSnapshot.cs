@@ -64,17 +64,7 @@ namespace MyTrips.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("cityId");
-
                     b.ToTable("Host");
-                });
-
-            modelBuilder.Entity("MyTrips.Models.Host", b =>
-                {
-                    b.HasOne("MyTrips.Models.City", "city")
-                        .WithMany()
-                        .HasForeignKey("cityId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

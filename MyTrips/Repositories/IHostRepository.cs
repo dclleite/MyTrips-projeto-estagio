@@ -8,6 +8,5 @@ namespace MyTrips
     {
         void SaveHost(List<Hotel> hotel);
         IList<Host> GetHotel();
-        IList<City> GetCities();
     }
 }

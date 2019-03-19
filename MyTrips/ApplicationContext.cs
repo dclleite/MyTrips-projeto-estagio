@@ -19,7 +19,6 @@ namespace MyTrips
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Host>().HasKey( t => t.Id);
-            modelBuilder.Entity<Host>().HasOne(t => t.city);
             modelBuilder.Entity<City>();
         }
     }

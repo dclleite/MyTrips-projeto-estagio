@@ -34,8 +34,6 @@ namespace MyTrips.Models
         [ForeignKey("City")]
         public int cityId { get;private set; }
         [Required]
-        public City city { get;private set; }
-        [Required]
         public string country { get; private set; }
         [Required]
         public string date { get; private set; }
@@ -73,33 +71,15 @@ namespace MyTrips.Models
 
         public City(int id, string name)
         {
-            this.id = id;
+            this.Id = id;
             this.name = name;
         }
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int id { get; set; }
+        public int Id { get; set; }
         [Required]
         public string name { get; set; }
-
-
-    }
-
-    public class HotelEscolhido : BaseModel
-    {
-        [Required]
-        public string nameCity { get; set; }
-        [Required]
-        public string country { get; set; }
-        [Required]
-        public string date { get; set; }
-        [Required]
-        public int guest { get; set; }
-        [Required]
-        public string classe { get; set; }
-        [Required]
-        public decimal price { get; set; }
 
 
     }
