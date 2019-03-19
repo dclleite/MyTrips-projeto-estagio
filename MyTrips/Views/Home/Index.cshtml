@@ -27,7 +27,7 @@
                 <p id="class"><i class="fas fa-crown"></i> First Class</p>
             </div>
             <div class="divInfos">
-                <p id="price"><i class="far fa-credit-card"></i> 800$</p>
+                <p id="price"><i class="far fa-credit-card"></i> 800€</p>
             </div>
         </div>
 
@@ -45,7 +45,28 @@
                         </div>
                         <div class="card-infos">
                             <div class="card-infos-interno">
-                                <p class="stars"><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i></p>
+                                @if (hotel.stars == 5)
+                                {
+                                    <p class="stars">
+                                        <i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i>
+                                        <i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i>
+                                    </p>
+                                }
+                                else if (hotel.stars == 4)
+                                {
+                                    <p class="stars">
+                                        <i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i>
+                                        <i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i>
+                                    </p>
+                                }
+                                else if (hotel.stars == 3)
+                                {
+                                    <p class="stars">
+                                        <i class="fas fa-star colorStar"></i><i class="fas fa-star colorStar"></i>
+                                        <i class="fas fa-star colorStar"></i>
+                                    </p>
+                                }
+
                             </div>
                             <div class="card-infos-interno nomeHotel">
                                 <h3 id="nomeHotel">@hotel.hotelName</h3>
