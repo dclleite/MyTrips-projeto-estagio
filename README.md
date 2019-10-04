@@ -122,9 +122,6 @@
 
 <p>Basta abrir no Visual Studio 2015 ou superior e dar um Start</p>
 
-<br>
-
-<p>Apesar das dificuldades, tentei entregar o máximo que consegui, e o que não consegui, vou correr atrás e aprender, apesar da falta de experiência, eu gosto de programar, e hoje sei que quero isso para minha vida.</p>
 
 
 
